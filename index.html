@@ -49,6 +49,26 @@
             Email: <a href="mailto:edsonsignori@example.com">edsonsignori@example.com</a><br>
             Telefone: (49) 98883-1415
         </address>
+        <form action="" method="post">
+            <label for="nome">Nome: </label><br>
+            <input type="text" size="50px" id="nome" name="nome" required><br>
+            <label for="email">Email: </label><br>
+            <input type="email" size="50px" id="email" name="email" required><br>
+            <label for="telefone">Telefone: </label><br>
+            <input type="tel" id="telefone" name="telefone"><br>
+            <label for="assunto">Assunto: </label><br>
+            <select id="assunto" name="assunto" required>
+                <option value="orcamento">Orçamento</option>
+                <option value="duvida">Dúvida</option>
+                <option value="outro">Outro</option>
+            </select><br>
+            <label for="message">Mensagem: </label><br>
+            <textarea id="message" name="message" cols="48" rows="5" required></textarea><br>
+            <input type="checkbox" id="inscricao" name="inscricao">
+            <label for="inscricao">Desejo receber novidades e atualizações por email ? Fique por dentro.</label><br>
+            <input type="datetime-local" id="data" name="data"><br>
+            <input type="submit" value="Enviar mensagem">
+        </form>
     </section>
     </footer>
 </body>
