@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edson A. Signori</title>
 </head>
+
 <body>
     <header>
         <h1>Edson A. Signori</h1>
@@ -18,18 +20,21 @@
             </ul>
         </nav>
     </header>
-    <section id="sobre"> <!-- Seção sobre mim -->  
+    <section id="sobre"> <!-- Seção sobre mim -->
         <h2>Sobre mim</h2>
-        <img src="istockphoto-508380634-170667a.jpg" alt="Imagem da foto de perfil" title="Imagem de perfil de Edson A. Signori" width="200"> <!-- Foto de perfil -->
+        <img src="istockphoto-508380634-170667a.jpg" alt="Imagem da foto de perfil"
+            title="Imagem de perfil de Edson A. Signori" width="200"> <!-- Foto de perfil -->
         <article>
-            <p>Sou um desenvolvedor de software apaixonado por criar soluções e automações inovadoras e eficientes. Tenho experiência em algumas linguagens de programação e estou sempre buscando aprender novas tecnologias para aprimorar minhas habilidades.</p>
+            <p>Sou um desenvolvedor de software apaixonado por criar soluções e automações inovadoras e eficientes.
+                Tenho experiência em algumas linguagens de programação e estou sempre buscando aprender novas
+                tecnologias para aprimorar minhas habilidades.</p>
         </article>
         <aside>
             <h3>Habilidades</h3>
             <ul>
                 <li>JavaScript</li>
                 <li>Python</li>
-                <li>HTML/CSS</li>               
+                <li>HTML/CSS</li>
             </ul>
         </aside>
     </section>
@@ -40,82 +45,123 @@
             <p>Este foi o primeiro site que desenvolvi de programação frontend.</p>
         </article>
     </section>
-    <section id="habilidades"> <!-- Seção de blog -->
+    <section id="habilidades"> <!-- Seção habilidades -->
         <h2>Habilidades e Tecnologias</h2>
-        <table >
+        <table>
             <thead>
                 <tr>
                     <th>Tecnologia</th>
                     <th>Nível</th>
                     <th>Descrição</th>
-                </tr>    
+                </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>HTML</td>
                     <td>Iniciantes</td>
-                    <td>Capaz de construir estruturas de páginas web semânticas e responsivas.</td>   
+                    <td>Capaz de construir estruturas de páginas web semânticas e responsivas.</td>
                 </tr>
                 <tr>
                     <td>CSS</td>
                     <td>Intermediário</td>
-                    <td>Experiência com flexbox, grid e animações CSS.</td>   
+                    <td>Experiência com flexbox, grid e animações CSS.</td>
                 </tr>
                 <tr>
                     <td>Javascript</td>
                     <td>Básico</td>
-                    <td>Desenvolvimento de scripts do lado do cliente para interações.</td>                   </tr>
+                    <td>Desenvolvimento de scripts do lado do cliente para interações.</td>
+                </tr>
             </tbody>
 
         </table>
-            <tr>
-                <td>JavaScript</td>
-                <td>Intermediário</td>
-            </tr>
-            <tr>
-                <td>Python</td>
-                <td>Avançado</td>
-            </tr>
-            <tr>
-                <td>HTML/CSS</td>
-                <td>Avançado</td>
-            </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Intermediário</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Avançado</td>
+        </tr>
+        <tr>
+            <td>HTML/CSS</td>
+            <td>Avançado</td>
+        </tr>
         </table>
         <article>
             <h3>Últimas postagens</h3>
-            <p>Ainda não tenho postagens, mas em breve compartilharei minhas experiências e aprendizados no mundo da programação.</p>
+            <p>Ainda não tenho postagens, mas em breve compartilharei minhas experiências e aprendizados no mundo da
+                programação.</p>
         </article>
+    </section>
+    <section id="insc_lecionar">
+        <h2>Inscrição para lecionar</h2>
+        <p>Você é um profissional que deseja compartilhar seu conhecimento, inscreva-se para lecionar em nosso site.
+            Estamos sempre em busca de especialistas para contribuir com conteúdo de qualidade.</p>
+        <form action="" method="post">
+            <label for="lecionar_nome">Nome completo: </label><br>
+            <input type="text" size="50px" id="lecionar_nome" name="lecionar_nome" required><br>
+            <label for="lecionar_email">Email: </label><br>
+            <input type="email" size="50px" id="lecionar_email" name="lecionar_email" required><br>
+            <label for="lecionar_idade">Idade: </label><br>
+            <input type="number" id="lecionar_idade" name="lecionar_idade" required><br>
+            <label for="lecionar_assunto">Assunto: </label><br>
+            <input type="text" size="50px" id="lecionar_assunto" name="lecionar_assunto" required><br>
+            <label for="lecionar_materia">Qual matéria se candidata a lecionar? </label><br>
+            <select id="lecionar_materia" name="lecionar_materia" required>
+                <option id="materia_artes" value="artes">Artes</option>
+                <option id="materia_biologia" value="biologia">Biologia</option>
+                <option id="materia_ciencia" value="ciencia">Ciência</option>
+                <option id="materia_geografia" value="geografia">Geografia</option>
+                <option id="materia_historia" value="historia">História</option>
+                <option id="materia_matematica" value="matematica">Matemática</option>
+                <option value="portugues">Português</option>
+            </select><br>
+            <label for="lecionar_nivel">Nível escolaridade? </label><br>
+            <select id="lecionar_nivel" name="lecionar_nivel" required>
+                <option id="nivel_superior" value="lecionar_superior_comp">Superior Completo</option>
+                <option id="nivel_cursando_mestrado" value="lecionar_cursando_mestrado">Cursando Mestrado</option>
+                <option id="nivel_mestrado" value="lecionar_mestrado_comp">Mestrado Completo</option>
+                <option id="nivel_cursando_doutorado" value="lecionar_cursando_doutorado">Cursando Doutorado</option>
+                <option id="nivel_doutorado" value="lecionar_doutorado_comp">Doutorado Completo</option> 
+
+            </select><br>
+            <label for="message">Descrição sobre si mesmo: </label><br>
+            <textarea id="message" name="message" cols="48" rows="5" maxlength="200" required></textarea><br>
+            <input type="submit" value="Enviar inscrição">
+        </form>
+
     </section>
     <footer id="contact"> <!-- Rodapé com contato -->
         <p>Direitos autorais &copy; 2026 Edson A. Signori. Todos os direitos reservados.</p>
-    <section>
-        <h2>Contato</h2>
-        <p>Tem um projeto em mente ou quer se conectar? Sinta-se à vontade para entrar em contato comigo!</p>
-        <address>
-            Email: <a href="mailto:edsonsignori@example.com">edsonsignori@example.com</a><br>
-            Telefone: (49) 98883-1415
-        </address>
-        <form action="" method="post">
-            <label for="nome">Nome: </label><br>
-            <input type="text" size="50px" id="nome" name="nome" required><br>
-            <label for="email">Email: </label><br>
-            <input type="email" size="50px" id="email" name="email" required><br>
-            <label for="telefone">Telefone: </label><br>
-            <input type="tel" id="telefone" name="telefone"><br>
-            <label for="assunto">Assunto: </label><br>
-            <select id="assunto" name="assunto" required>
-                <option value="orcamento">Orçamento</option>
-                <option value="duvida">Dúvida</option>
-                <option value="outro">Outro</option>
-            </select><br>
-            <label for="message">Mensagem: </label><br>
-            <textarea id="message" name="message" cols="48" rows="5" required></textarea><br>
-            <input type="checkbox" id="inscricao" name="inscricao">
-            <label for="inscricao">Desejo receber novidades e atualizações por email ? Fique por dentro.</label><br>
-            <input type="datetime-local" id="data" name="data"><br>
-            <input type="submit" value="Enviar mensagem">
-        </form>
-    </section>
+        <section>
+            <h2>Contato</h2>
+            <p>Tem um projeto em mente ou quer se conectar? Sinta-se à vontade para entrar em contato comigo!</p>
+            <address>
+                Email: <a href="mailto:edsonsignori@example.com">edsonsignori@example.com</a><br>
+                Telefone: (49) 98883-1415
+            </address>
+            <form action="" method="post">
+                <label for="nome">Nome: </label><br>
+                <input type="text" size="50px" id="nome" name="nome" required><br>
+                <label for="email">Email: </label><br>
+                <input type="email" size="50px" id="email" name="email" required><br>
+                <label for="telefone">Telefone: </label><br>
+                <input type="tel" id="telefone" name="telefone"><br>
+                <label for="assunto">Assunto: </label><br>
+                <select id="assunto" name="assunto" required>
+                    <option value="orcamento">Orçamento</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select><br>
+                <label for="message">Mensagem: </label><br>
+                <textarea id="message" name="message" cols="48" rows="5" required></textarea><br>
+                <input type="checkbox" id="inscricao" name="inscricao">
+                <label for="inscricao">Desejo receber novidades e atualizações por email ? Fique por dentro.</label><br>
+                <input type="datetime-local" id="data" name="data"><br>
+                <input type="submit" value="Enviar mensagem">
+            </form>
+        </section>
     </footer>
 </body>
+
 </html>
